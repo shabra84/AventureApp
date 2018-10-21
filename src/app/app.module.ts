@@ -4,7 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 //import {Keyboard} from '@ionic-native/keyboard';
- 
+
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -14,7 +14,7 @@ import { PostPopover } from '../pages/speaker-list/post-popover';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { EstablecimientosPage } from '../pages/establecimientos/establecimientos';
- 
+
 import {HttpModule} from '@angular/http';
 
 import { AuthService } from '../providers/auth/auth-service';
@@ -28,18 +28,18 @@ import { TermsPage } from '../pages/terms/terms';
 import {LoginPage} from "../pages/login/login";
 import {RegisterPage} from "../pages/register/register";
  import {RegistroLugaresPage} from '../pages/registro-lugares/registro-lugares';
- 
 
-// import services 
+
+// import services
 
 // Import library firbease
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase } from 'angularfire2/database';
-    
+
 // import pages
 // end import pages
 
- 
+
 import { AboutPage } from '../pages/about/about';
 import { PopoverPage } from '../pages/about-popover/about-popover';
 import { MapPage } from '../pages/map/map';
@@ -57,10 +57,11 @@ import { GalleryPostPage } from '../pages/gallery-post/gallery-post';
 import{ForgotPasswordPage} from '../pages/forgot-password/forgot-password';
 import { DetailPage } from '../pages/detail/detail';
 import { Config } from '../providers/config';
+import { AngularFireModule } from 'angularfire2';
 
 import { GalleryPosterComponent } from './gallery-poster/gallery-poster';
 import {Targetas} from '../providers/auth/targetas'
- 
+
 const firebaseConfig = {
    apiKey: "AIzaSyCHthOzqJFKTRH0Q0_TC06dSUsYTf7pHHY",
   authDomain: "prueba-bda12.firebaseapp.com",
@@ -93,8 +94,9 @@ const firebaseConfig = {
     PostPopover,
     EstablecimientosPage,
     TermsPage,
-    GalleryPosterComponent
-     
+    GalleryPosterComponent,
+    AngularFireModule
+
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
 
@@ -150,7 +152,7 @@ const firebaseConfig = {
     Facebook,
     Config,
     ImagePicker,
- 
+
     ImageProvider
   ]
 })
